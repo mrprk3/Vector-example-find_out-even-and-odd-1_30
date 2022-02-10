@@ -1,0 +1,43 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mrprk;
+import java.util.Iterator;
+import java.util.Vector;
+/**
+ *
+ * @author ATIM
+ */
+public class Test1 {
+    public static void main(String[] args) {
+        Vector <Integer> v = new Vector<Integer>();
+        System.out.println("The even number is given bellow :");
+        for(int i=1; i<=30; i++){
+        v.add(i);
+        }
+        //System.out.println(v);
+        Iterator itr = v.iterator();
+        while(itr.hasNext()){
+         Integer data =(Integer) itr.next();
+          
+         if(data%2==0){
+             //System.out.println("Even number");
+             System.out.println(data);
+         }
+        
+        }
+        System.out.println("The odd Number is given bellow :");;
+        Iterator itr2 = v.iterator();
+        while(itr2.hasNext()){
+        Integer data2 = (Integer) itr2.next();
+         
+         if(data2%2!=0){
+             System.out.println(data2);
+         }
+        }
+        
+        }
+    }
+
